@@ -123,3 +123,32 @@ img.socialIcon {
   height: 30px;
   width: 30px;
 }
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+img.socialIcon {
+  animation: float 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+img.socialIcon:hover {
+  animation-play-state: paused;
+  transform: scale(1.2);
+}
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
